@@ -1,0 +1,6 @@
+#!/bin/bash
+own=$(ll file1 | awk {'print $3'})
+
+if [own == 'guillaume' ];then
+chown betty: hello
+fi
